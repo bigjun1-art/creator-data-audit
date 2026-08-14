@@ -1,0 +1,4 @@
+interface:
+  display_name: "达人数据核查"
+  short_description: "批量核验星图和蒲公英达人数据，生成带日期证据的可复核评估表"
+  default_prompt: "使用 $creator-data-audit 批量核查达人数据并生成带证据的评估表。"
