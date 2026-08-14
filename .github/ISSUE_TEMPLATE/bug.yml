@@ -1,0 +1,21 @@
+name: Bug report
+description: Report a reproducible non-security bug using sanitized data.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Sanitized reproduction and observed behavior
+      description: Remove creator names, account IDs, platform IDs, URLs, source tables, screenshots, cookies, tokens, logs, and business data.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: This report contains no secrets, creator identifiers, source tables, HAR files, screenshots, or business data.
+          required: true
+        - label: This is not a security vulnerability; security issues belong in Private Vulnerability Reporting.
+          required: true
